@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <main>
+        <form action="" method="post" class="formulario" id="formulario">
+            <!--  Grupo titulo  -->
+            <div class="formulario_grupo" id="grupo_titulo">
+                <div class="formulario_grupo_titulo">
+                    <h1 class="titulo">Formulario de contacto <i class="fas fa-file-signature"></i></h1>                                        
+                </div>
+            </div>
+
+            <!--  Grupo nombre  -->
+            <div class="formulario_grupo" id="grupo_nombre">
+                <div class="formulario_grupo_input">
+                    <i class="fas fa-user icono_input"></i>
+                    <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <p class="formulario_input_error">El nombre solo puede tener letras, espacios y debe tener un entre 1 y 40 caracteres</p>
+            </div>
+
+            <!--  Grupo apellido  -->
+            <div class="formulario_grupo" id="grupo_apellido">
+                <div class="formulario_grupo_input">
+                    <i class="fas fa-user icono_input"></i>
+                    <input type="text" class="formulario_input" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+                <p class="formulario_input_error">El apellido solo puede tener letras, espacios y debe tener un entre 1 y 30 caracteres</p>
+            </div>
+
+            <!--  Grupo correo  -->
+            <div class="formulario_grupo" id="grupo_correo">
+                <div class="formulario_grupo_input">
+                    <i class="fas fa-envelope icono_input"></i>
+                    <input type="text" class="formulario_input" name="correo" id="correo" placeholder="Ingrese su correo">
+                </div>
+                <p class="formulario_input_error">El correo solo puede tener letras, numeros, puntos, guiones y guion bajo</p>
+            </div>
+
+            <!--  Grupo telefono  -->
+            <div class="formulario_grupo" id="grupo_telefono">
+                <div class="formulario_grupo_input">
+                    <i class="fas fa-phone-alt icono_input"></i>
+                    <input type="text" class="formulario_input" name="telefono" id="telefono" placeholder="Ingrese su numero de telefono">
+                </div>
+                <p class="formulario_input_error">El telefono solo puede tener numeros y debe tener un entre 8 y 14 digitos</p>
+            </div>
+
+            <!--  Grupo mensaje  -->
+            <div class="formulario_grupo" id="grupo_mensaje">
+                <div class="formulario_grupo_input">
+                    <i class="fas fa-edit icono_input"></i>                   
+                    <textarea rows="5" class="formulario_input input_mensaje" name="mensaje" id="mensaje" placeholder="Ingrese su mensaje o comentario aqui..."></textarea>
+                </div>
+                <p class="formulario_input_error">El mensaje debe tener por lo menos 4 caracteres y un maximo de 150 caracteres</p>
+            </div>
+
+            <!-- Mensaje de obligatorio -->
+            <div class="formulario_grupo" id="grupo_mensaje_obligatorio">
+                <div class="formulario_grupo_mensaje_obligatorio">
+                    <p class="formulario_mensaje_obligatorio" id="formulario_mensaje_obligatorio" style="text-align: left;margin-left: 80px;">                        
+                       (*) Todos los datos son obligatorio.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mensaje de error -->
+            <div class="formulario_grupo" id="grupo_mensaje_error">
+                <div class="formulario_grupo_mensaje_error">
+                    <p class="formulario_mensaje" id="formulario_mensaje">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <b>Error:</b>
+                        Por favor complete el formulario correctamente
+                    </p>
+                </div>
+            </div>
+
+            <!--  Grupo mensaje correcto  y boton -->
+            <div class="formulario_grupo" id="grupo_boton">
+                <div class="formulario_grupo_boton">
+                    <button type="submit" class="formulario_btn">Enviar</button>
+                </div>
+                <p class="formulario_mensaje_correcto" id="formulario_mensaje_correcto">
+                    El formulario ha sido enviado correctamente
+                </p>
+            </div>
+            
+        </form>
+    </main>
+    <script src="https://kit.fontawesome.com/c019168c89.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
